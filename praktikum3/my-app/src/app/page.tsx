@@ -31,6 +31,7 @@ import MyGallery from "@/components/mygallery"
 import MyProfile from "@/components/myprofile"
 import MyProfileV2 from "@/components/myprofilev2"
 import Avatar from "@/components/avatar";
+
 // function Card({ children }) {
 //   return (
 //     <div className="card">
@@ -38,9 +39,17 @@ import Avatar from "@/components/avatar";
 //     </div>
 //   );
 // }
+function Card({ children }) {
+  return (
+    <div className="card">
+      {children}
+    </div>
+  );
+}
 export default function Home() {
   return (
     <section>
+    <>
       {/* <h1 className="font-semibold text-slate-900 truncate pr-20 text-center">Ilmuwan yang luar biasa</h1>
       <hr />
       <Gallery />
@@ -57,12 +66,14 @@ export default function Home() {
           }}
         />
       </Card> */}
-      <MyGallery/>
-      {/* <MyProfile/> */}
       {/* <MyGallery/> */}
       <MyProfile/>
       {/* <MyProfileV2/> */}
+      {/* <MyProfile/> */}
+      <MyProfileV2/>
       {/* <Profile /> */}
     </section>
+    </>
+
   );
 }
