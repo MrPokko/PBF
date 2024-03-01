@@ -1,4 +1,3 @@
-
 const person = {
     name: 'Gregorio Y. Zara',
     theme: {
